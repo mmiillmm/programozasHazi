@@ -90,7 +90,7 @@ namespace szamok
                 }
             }
 
-            Console.WriteLine(index);
+            Console.WriteLine($"A 3437 ezen az indexen található: {index}");
         }
 
         private static void Megszamolas()
