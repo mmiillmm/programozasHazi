@@ -42,6 +42,7 @@ namespace szamok
                     ker++;
                 }
             }
+            Console.WriteLine();
 
             Console.WriteLine($"Van 333 a listában. Indexe: {ker}.");
         }
@@ -57,13 +58,14 @@ namespace szamok
                     max = szamok[i];
                 }
             }
+            Console.WriteLine();
 
             Console.WriteLine($"Legnagyobb szám: {max}");
         }
 
         private static void Minimum()
         {
-            int min = 0;
+            int min = szamok[0];
 
             for (int i = 1; i < szamok.Count; i++)
             {
@@ -72,8 +74,9 @@ namespace szamok
                     min = szamok[i];
                 }
             }
+            Console.WriteLine();
 
-            Console.WriteLine($"Legkisebb szám: {min}");
+            Console.WriteLine($"Legkisebb szám: {min}.");
         }
 
 
@@ -89,8 +92,9 @@ namespace szamok
                     index++;
                 }
             }
+            Console.WriteLine();
 
-            Console.WriteLine($"A 3437 ezen az indexen található: {index}");
+            Console.WriteLine($"A 3437 ezen az indexen található: {index}.");
         }
 
         private static void Megszamolas()
@@ -104,6 +108,7 @@ namespace szamok
                     szam++;
                 }
             }
+            Console.WriteLine();
 
             Console.WriteLine($"Az összes kritériumnak megfelelő szám: {szam} db.");
         }
@@ -116,6 +121,13 @@ namespace szamok
             {
                 sum = sum + szamok[i];
             }
+
+            //foreach (var szam in szamok)
+	        //{
+            //    sum += szam;
+	        //}
+
+            Console.WriteLine();
 
             Console.WriteLine($"A számok összege {sum}.");
         }
